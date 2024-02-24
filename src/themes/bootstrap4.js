@@ -405,7 +405,7 @@ export class bootstrap4Theme extends AbstractTheme {
 
   getIndentedPanel () {
     const el = document.createElement('div')
-    el.classList.add('card', 'card-body', 'mb-3')
+    el.classList.add('card', 'card-body', 'mb-3', 'indented-card')
 
     if (this.options.object_background) {
       el.classList.add(this.options.object_background)
