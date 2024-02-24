@@ -301,11 +301,11 @@ languages.en = {
   /**
   * Text on Object Properties buttons
   */
-  button_properties: 'Properties',
+  button_properties: 'Add/Remove Properties',
   /**
   * Title on Object Properties buttons
   */
-  button_object_properties: 'Object Properties',
+  button_object_properties: 'Add/Remove Properties',
   /**
   * Title on Copy Row button
   * @variable This key takes one variable: The title of object to delete
