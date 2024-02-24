@@ -786,7 +786,7 @@ export class ObjectEditor extends AbstractEditor {
       }
 
       /* Object Properties Button */
-      this.addproperty_button = this.getButton('properties', 'edit_properties', 'button_object_properties')
+      this.addproperty_button = this.getButton('button_object_properties', 'edit_properties', 'button_object_properties')
       this.addproperty_button.classList.add('json-editor-btntype-properties')
       this.addproperty_button.addEventListener('click', (e) => {
         e.preventDefault()
