@@ -768,7 +768,7 @@ export class ObjectEditor extends AbstractEditor {
       }
 
       /* Edit JSON Button */
-      this.editjson_control = this.getButton('JSON', 'edit', 'button_edit_json')
+      this.editjson_control = this.getButton('Edit RAW JSON', 'edit', 'button_edit_json')
       this.editjson_control.classList.add('json-editor-btntype-editjson')
       this.editjson_control.addEventListener('click', (e) => {
         e.preventDefault()
