@@ -150,7 +150,7 @@ export class TableEditor extends ArrayEditor {
 
       ret.controls_cell = row.appendChild(this.theme.getTableCell())
       ret.row = row
-      ret.table_controls = this.theme.getButtonHolder()
+      ret.table_controls = ret.controls//this.theme.getButtonHolder()
       ret.controls_cell.appendChild(ret.table_controls)
       ret.table_controls.style.margin = 0
       ret.table_controls.style.padding = 0
