@@ -576,7 +576,6 @@ export class ObjectEditor extends AbstractEditor {
       this.editjson_textarea.classList.add('je-edit-json--textarea')
       this.editjson_save = this.getButton('button_save', 'save', 'button_save')
       this.editjson_save.classList.add('json-editor-btntype-save')
-      var tttt = this
       this.editjson_save.addEventListener('click', (e) => {
         e.preventDefault()
         e.stopPropagation()
