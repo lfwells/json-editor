@@ -47,6 +47,8 @@ export function extend (destination, ...args) {
 export function trigger (el, event) {
   const e = document.createEvent('HTMLEvents')
   e.initEvent(event, true, true)
+  // eslint-disable-next-line no-console
+  console.log('el', el, 'e', e)
   el.dispatchEvent(e)
 }
 
