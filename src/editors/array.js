@@ -506,7 +506,7 @@ export class ArrayEditor extends AbstractEditor {
       })
     }
 
-    const controlsHolder = this.rows[i].title_controls || this.rows[i].array_controls
+    const controlsHolder = this.rows[i].title_controls
 
     /* Buttons to delete row, move row up, and move row down */
     if (!this.hide_delete_buttons) {
