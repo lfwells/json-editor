@@ -584,7 +584,7 @@ export class ObjectEditor extends AbstractEditor {
         // eslint-disable-next-line no-console
         console.log(this)
         if (this.currentDepth === 1) {
-          this.jsoneditor.trigger('saveEditJSON')
+          window.jsoneditor.trigger('saveEditJSON')
         }
       })
       this.editjson_copy = this.getButton('button_copy', 'copy', 'button_copy')
