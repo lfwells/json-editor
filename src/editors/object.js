@@ -576,6 +576,7 @@ export class ObjectEditor extends AbstractEditor {
       this.editjson_textarea.classList.add('je-edit-json--textarea')
       this.editjson_save = this.getButton('button_save', 'save', 'button_save')
       this.editjson_save.classList.add('json-editor-btntype-save')
+      var tttt = this
       this.editjson_save.addEventListener('click', (e) => {
         e.preventDefault()
         e.stopPropagation()
@@ -583,7 +584,9 @@ export class ObjectEditor extends AbstractEditor {
 
         // eslint-disable-next-line no-console
         console.log(this)
-        this.trigger('saveEditJSON')
+        if (this.currentDepth === 1) {
+          trigger(tttt, 'saveEditJSON')
+        }
       })
       this.editjson_copy = this.getButton('button_copy', 'copy', 'button_copy')
       this.editjson_copy.classList.add('json-editor-btntype-copy')
