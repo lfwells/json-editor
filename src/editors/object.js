@@ -580,6 +580,10 @@ export class ObjectEditor extends AbstractEditor {
         e.preventDefault()
         e.stopPropagation()
         this.saveJSON()
+
+        // eslint-disable-next-line no-console
+        console.log(this)
+        this.trigger('saveEditJSON')
       })
       this.editjson_copy = this.getButton('button_copy', 'copy', 'button_copy')
       this.editjson_copy.classList.add('json-editor-btntype-copy')
