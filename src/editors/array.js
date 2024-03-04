@@ -506,6 +506,9 @@ export class ArrayEditor extends AbstractEditor {
       })
     }
 
+    // eslint-disable-next-line no-console
+    console.log('controls holder?', this.rows[i].controls, this.rows[i].title_controls, this.rows[i].array_controls)
+
     const controlsHolder = this.rows[i].controls || this.rows[i].title_controls || this.rows[i].array_controls
 
     /* Buttons to delete row, move row up, and move row down */
